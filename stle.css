@@ -1,0 +1,132 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;color:#111}
+
+.red{color:red}
+
+header{
+  background:red;
+  color:#fff;
+  padding:30px;
+  text-align:center;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  background:#111;
+}
+
+nav a{
+  color:#fff;
+  padding:15px 20px;
+  text-decoration:none;
+}
+
+nav a.active{background:red}
+
+.hero{
+  padding:70px 20px;
+  background:#f2f2f2;
+  text-align:center;
+}
+
+.cta{
+  display:inline-block;
+  margin-top:20px;
+  background:red;
+  color:#fff;
+  padding:12px 25px;
+  text-decoration:none;
+}
+
+.section{
+  padding:60px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.section.light{background:#f9f9f9}
+.section.dark{background:#111;color:#fff;text-align:center}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:#fff;
+  border-left:5px solid red;
+  padding:15px;
+}
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.portfolio img{width:100%}
+
+.booking-form{
+  max-width:600px;
+  display:grid;
+  gap:15px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+  padding:12px;
+  border:1px solid #ccc;
+}
+
+.booking-form button{
+  background:red;
+  color:#fff;
+  padding:14px;
+  border:none;
+}
+
+.whatsapp{
+  background:#25d366;
+  color:#fff;
+  padding:12px 20px;
+  display:inline-block;
+  margin-top:20px;
+  text-decoration:none;
+}
+
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+
+.fade{
+  opacity:0;
+  transform:translateY(30px);
+  transition:0.8s;
+}
+
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+@media(max-width:600px){
+  nav{flex-direction:column}
+}
+.card i {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: red; /* matches your theme */
+}
+
+.card p {
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #333; /* keeps text readable */
+}
